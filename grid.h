@@ -35,7 +35,7 @@ struct Grid {
  */
 template<typename T>
 class array2d_iterator : public std::iterator<std::forward_iterator_tag, T>{
-    T rows, columns, cell, i, j;
+    T rows, columns, i, j, cell;
 
     array2d_iterator(T _rows, T _columns, T _i, T _j, T _cell)
         : rows(_rows), columns(_columns), i(_i), j(_j), cell(_cell) {}
